@@ -1,0 +1,7 @@
+@use "./layout/header";
+@use "./layout/category";
+@use "./layout/carousal";
+@use "./components/slider";
+@use "./layout/cards";
+@use "./layout/description";
+/*# sourceMappingURL=main.css.map */
