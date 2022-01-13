@@ -1,0 +1,34 @@
+NodeJS
+https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+--Asynchronous event-driven JavaScript runtime designed to build scalable network applications
+--Open-source, including Google's V8 engine
+--Non Blocking I/O Model
+	--Single thread can manage multiple connections
+		Client fires request.
+			Need to commnunicate to a different server OR need to run a process that is I/O Bound
+				Thread is not blocked and a Callback Event is generated which is fired when the I/O or server response is satisfied.
+
+Pros:
+If your application doesn’t have any CPU intensive computation, you can build it in Javascript top-to-bottom, even down to the database level if you use JSON storage Object DB like MongoDB. This eases development (including hiring) significantly.
+Crawlers receive a fully-rendered HTML response, which is far more SEO-friendly than, say, a Single Page Application or a websockets app run on top of Node.js.
+
+Cons:
+Any CPU intensive computation will block Node.js responsiveness, so a threaded platform is a better approach. Alternatively, you could try scaling out the computation [*].
+Using Node.js with a relational database is still quite a pain (see below for more detail). Do yourself a favour and pick up any other environment like Rails, Django, or ASP.Net MVC if you’re trying to perform relational operations.
+
+How NodeJS Works: https://www.youtube.com/watch?v=YSyFSnisip0&ab_channel=Telusko
+	Takes in a request.
+		Fires an order to process the request to LibUV(has multiple threads also called Worker threads)
+	Takes in another request while LibUV processes and returns a response.
+		...
+	LibUV returns a response and same is returned to the user.
+				
+NPM - Node Package Manager
+	npm init - Initialise as a node project
+		Forms a package.json (Holds the info about the project)
+		
+NPX - Node Package Executor
+
+express Package
+	npm install express
+angularCLI
