@@ -22,6 +22,21 @@
   border: 1px solid rgba(0, 0, 0, 0.24);
 }
 
+.signup__form > div {
+  min-width: 380px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.signup__form > div > input {
+  min-width: 380px;
+  padding: 20px 0;
+  padding-left: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
 .user__img {
   margin: 10px 0;
   border-radius: 100%;
@@ -40,6 +55,7 @@
 
 .login__btn {
   padding: 12px 12px;
+  width: auto;
   margin: 10px;
   background: black;
   color: white;
@@ -47,4 +63,10 @@
   border-radius: 10px;
   border: none;
   align-self: flex-end;
+}
+
+span {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 15px;
 }
